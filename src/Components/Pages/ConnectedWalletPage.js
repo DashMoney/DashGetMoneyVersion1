@@ -158,7 +158,7 @@ class ConnectedWalletPage extends React.Component {
       },
       apps: {
         DGMContract: {
-          contractId: "HPqNS5xv34Wn4cjuS7EZHAQsbMtTf4S4Wx9DYQbyUwgZ",
+          contractId: 'DvFwMMxLRfPLp5bGK8D4CqaHME21iF7R9HnBnvf7Mk8g',
         },
       },
     };
@@ -168,7 +168,7 @@ class ConnectedWalletPage extends React.Component {
       console.log("Querying Receipient's DGM Documents.");
       console.log(this.state.identityIdReceipient);
 
-      return client.platform.documents.get("DGMContract.dgmaddress1", {
+      return client.platform.documents.get("DGMContract.dgmaddress", {
         where: [["$ownerId", "==", this.state.identityIdReceipient]],
       });
     };

@@ -419,7 +419,7 @@ class App extends React.Component {
       },
       apps: {
         DGMContract: {
-          contractId: "HPqNS5xv34Wn4cjuS7EZHAQsbMtTf4S4Wx9DYQbyUwgZ",
+          contractId: 'DvFwMMxLRfPLp5bGK8D4CqaHME21iF7R9HnBnvf7Mk8g',
         },
       },
     };
@@ -428,7 +428,7 @@ class App extends React.Component {
     const getDocuments = async () => {
       console.log("Called Query DGM Documents.");
 
-      return client.platform.documents.get("DGMContract.dgmaddress1", {
+      return client.platform.documents.get("DGMContract.dgmaddress", {
         where: [["$ownerId", "==", this.state.identity]],
       });
     };
@@ -487,7 +487,7 @@ class App extends React.Component {
       },
       apps: {
         DGMContract: {
-          contractId: "HPqNS5xv34Wn4cjuS7EZHAQsbMtTf4S4Wx9DYQbyUwgZ",
+          contractId: 'DvFwMMxLRfPLp5bGK8D4CqaHME21iF7R9HnBnvf7Mk8g',
         },
       },
     };
@@ -503,7 +503,7 @@ class App extends React.Component {
 
       // Create the note document
       const dgmDocument = await platform.documents.create(
-        "DGMContract.dgmaddress1", 
+        "DGMContract.dgmaddress", 
         identity,
         docProperties
       );

@@ -34,7 +34,7 @@ const registerContract = async () => {
 //https://github.com/dashpay/platform/pull/435 chore(dpp)!: allow only asc order for indices #435
 
   const contractDocuments = {
-    dgmaddress1: {
+    dgmaddress: {
         type: 'object',
         indices: [
           {
