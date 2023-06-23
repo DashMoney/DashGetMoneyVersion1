@@ -9,6 +9,11 @@
 
 You can verify in the package.json file
 
+#### Additional Requirements
+
++ Dash Testnet Platform must be operational, [https://dash-testnet.freshstatus.io/](https://dash-testnet.freshstatus.io/)
++ If Testnet Platform state was wiped, the data contract, included in this repo, must be re-established for operation.
+
 ## Install
 
 + Ensure you have node 16 installed, node 18 will not work.
